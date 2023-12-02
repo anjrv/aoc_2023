@@ -33,11 +33,15 @@ fn main() {
                     )
                 });
 
-            if highest_colors.0 <= 12 && highest_colors.1 <= 13 && highest_colors.2 <= 14 {
-                parts[0].split(' ').last().unwrap().parse::<u32>().unwrap()
-            } else {
-                0
-            }
+            // Part: 1
+            // if highest_colors.0 <= 12 && highest_colors.1 <= 13 && highest_colors.2 <= 14 {
+            //     parts[0].split(' ').last().unwrap().parse::<u32>().unwrap()
+            // } else {
+            //     0
+            // }
+
+            // Part: 2
+            highest_colors.0 * highest_colors.1 * highest_colors.2
         })
         .sum();
 
